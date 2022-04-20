@@ -1,11 +1,11 @@
 
 
 <template>
-  <div>
+  <div id="map-container">
     <l-map
       :zoom="zoom"
       :center="center"
-      style="height: 800px; width:100%"
+      style="height: 70pc; width:80%; margin: auto;"
     >
       <l-tile-layer
         :url="url"
@@ -36,8 +36,8 @@ export default {
   },
   data() {
     return {
-      zoom: 11,
-      center: [52.2851, 0.1247],
+      zoom: 14,
+      center: [52.2851, 0.1247],  // take mean of initial data
       polyline: {
         latlngs: [
           [52.287010,0.121747],
